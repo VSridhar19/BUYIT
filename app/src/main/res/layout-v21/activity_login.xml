@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/black">
+    tools:context="com.example.sridhar.buyit.Login">
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Login Page"
+        android:textSize="30dp"
+        android:textColor="#ff0"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/ui1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_stat_name11"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textColor="#fff"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="?android:attr/colorButtonNormal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+    <EditText
+        android:id="@+id/ps1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_stat_name101"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="......."
+        android:textColor="#ffffffff"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="?android:attr/colorButtonNormal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:onClick="check"
+
+        android:text="Remember me "
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/b4"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_action_name"
+        android:clickable="true"
+        android:onClick="login"
+        android:padding="16dp"
+        android:text="LOGIN"
+        android:textAllCaps="false"
+        android:textColor="#f16f7d"
+        android:textSize="30dp"
+
+        tools:ignore="OnClick" />
+
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="331dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="text"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:text="Create your account"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20dp"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

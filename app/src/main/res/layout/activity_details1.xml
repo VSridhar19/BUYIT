@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sridhar.buyit.Details1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/details01"
+            android:layout_width="300dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/details1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/details2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="hi"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/details2"
+            android:layout_width="1500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/details01"
+            android:text="hLOOOO"
+            android:textSize="30dp"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/details2"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/colorPressedHighlight"
+            android:drawableLeft="@drawable/ic_stat_name"
+            android:onClick="add"
+            android:text="ADD TO CART"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/details1"
+            android:layout_alignRight="@+id/details1"
+            android:layout_alignTop="@+id/b1"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@android:color/holo_red_dark"
+            android:drawableLeft="@drawable/ic_stat_name1"
+            android:onClick="buy"
+            android:text="BUY NOW" />
+
+        <TextView
+            android:id="@+id/details3"
+            android:layout_width="1500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:text="hiiii"
+            android:textSize="30dp"
+            />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

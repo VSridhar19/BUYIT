@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.sridhar.buyit.Payment">
+    <RadioGroup
+        android:id="@+id/Rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/r1"
+        android:text="phonePe/BHIM UPI"
+        android:textSize="25dp"
+        android:textAlignment="viewStart"
+        android:gravity="end"
+        tools:ignore="RtlCompat" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/r2"
+        android:text="Credit/Debit/ATM Card"
+        android:textSize="25dp"
+        android:textAlignment="viewStart"
+        android:gravity="end"
+        tools:ignore="RtlCompat" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/r3"
+        android:text="Net Banking"
+        android:textSize="25dp"
+        android:textAlignment="viewStart"
+        android:gravity="end"
+        tools:ignore="RtlCompat" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="EMI(Easy Installment)"
+            android:textSize="25dp"
+            android:id="@+id/r4"
+            android:textAlignment="viewStart"
+            android:gravity="end"
+            tools:ignore="RtlCompat" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cash on Delivery"
+            android:textSize="25dp"
+            android:id="@+id/r5"
+            android:textAlignment="viewStart"
+            android:gravity="end"
+            tools:ignore="RtlCompat" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Rg1"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="69dp"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_stat_name1"
+        android:onClick="buy"
+        android:text="BUY NOW" />
+
+    <TextView
+        android:id="@+id/d1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/b2"
+        android:layout_alignBottom="@+id/b2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:background="@color/colorAccent"
+        android:text="hi"
+        android:textColorLink="@color/cardview_dark_background"
+        android:textSize="30dp" />
+
+
+
+</RelativeLayout>

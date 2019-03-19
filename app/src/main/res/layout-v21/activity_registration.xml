@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/black">
+    tools:context="com.example.sridhar.buyit.Registration">
+
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Here you can put your logo or brand name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Registration Page"
+        android:textAlignment="center"
+        android:textColor="#ff0"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_stat_name11"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textColor="#ffffffff"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="?android:attr/colorButtonNormal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+    <EditText
+        android:id="@+id/p1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_stat_name101"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="#ffffffff"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textColorLink="@color/cardview_light_background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+    <EditText
+        android:id="@+id/p2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_stat_name102"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textColor="#ffffffff"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="?android:attr/colorButtonNormal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+    <EditText
+        android:id="@+id/m1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_stat_name100"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textColor="#ffffffff"
+        android:hint="enter ur mail id"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="?android:attr/colorButtonNormal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+    <EditText
+        android:id="@+id/ph1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_action_name01"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textColor="#ffffffff"
+        android:hint="phone no"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColorHint="?android:attr/colorButtonNormal"
+        android:textColorLink="@color/cardview_light_background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db" />
+
+
+
+
+
+    <Button
+        android:id="@+id/b3"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_add_shopping_cart_black_24dp"
+        android:clickable="true"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:onClick="Register"
+        android:text="REGISTER" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="display"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:text="Display"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="30dp" />
+
+</LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+
